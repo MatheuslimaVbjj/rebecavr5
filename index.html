@@ -7,19 +7,17 @@
   <meta name="description" content="ATLÂNTICO STUDIO conecta marketing, vendas e branding para transformar marcas em presença digital premium." />
   <meta name="keywords" content="Atlântico Studio, branding, marketing digital, landing page, social media, identidade visual, agência criativa" />
   <meta name="author" content="ATLÂNTICO STUDIO" />
-  <meta name="theme-color" content="#03141d" />
+  <meta name="theme-color" content="#02080d" />
   <meta property="og:title" content="ATLÂNTICO STUDIO — Estúdio Criativo Digital" />
   <meta property="og:description" content="Conectamos ideias. Transformamos marcas." />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="assets/images/ocean-full-site-poster.jpg" />
+  <meta property="og:image" content="assets/logo/logo-atlantico-studio.png" />
   <link rel="icon" href="assets/favicon/favicon.ico" sizes="any" />
   <link rel="icon" type="image/png" href="assets/favicon/favicon-32.png" />
   <link rel="apple-touch-icon" href="assets/favicon/apple-touch-icon.png" />
   <link rel="preload" href="assets/logo/logo-atlantico-studio.svg" as="image" />
-  <link rel="preload" href="assets/images/ocean-full-site-poster.jpg" as="image" />
-  <link rel="preload" href="assets/video/ocean-full-site-bg.mp4" as="video" type="video/mp4" />
-  <link rel="preload" href="assets/video/ocean-real-waves-bg.mp4" as="video" type="video/mp4" />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="preload" href="assets/video/ocean-real-waves-bg.mp4?v=7" as="video" type="video/mp4" />
+  <link rel="stylesheet" href="style.css?v=7" />
 </head>
 <body>
   <div class="page-loader" id="pageLoader" aria-hidden="true">
@@ -30,16 +28,15 @@
   </div>
 
   <div class="ocean-backdrop" aria-hidden="true">
-    <video class="site-ocean-video" id="siteOceanVideo" autoplay muted loop playsinline preload="auto" poster="assets/images/ocean-full-site-poster.jpg">
-      <source src="assets/video/ocean-full-site-bg.mp4?v=6" type="video/mp4" />
+    <video class="site-ocean-video" id="siteOceanVideo" data-ocean-video autoplay muted loop playsinline webkit-playsinline preload="auto">
+      <source src="assets/video/ocean-real-waves-bg.mp4?v=7" type="video/mp4" />
+      <source src="assets/video/ocean-full-site-bg.mp4?v=7" type="video/mp4" />
+      <source src="assets/video/ocean-waves-atlantico.mp4?v=7" type="video/mp4" />
     </video>
     <div class="ocean-backdrop-overlay"></div>
   </div>
 
-  <canvas class="ocean-particle-canvas" id="oceanParticleCanvas" aria-hidden="true"></canvas>
-  <div class="deep-current" id="deepCurrent" aria-hidden="true">
-    <span></span><span></span><span></span>
-  </div>
+  <button class="video-activate" id="videoActivate" type="button" aria-label="Ativar vídeo do oceano">Ativar vídeo</button>
 
   <header class="site-header" id="siteHeader">
     <a href="#inicio" class="brand" aria-label="ATLÂNTICO STUDIO - página inicial">
@@ -61,8 +58,9 @@
 
   <main>
     <section class="hero" id="inicio">
-      <video class="hero-video" id="heroVideo" autoplay muted loop playsinline preload="auto" poster="assets/images/ocean-full-site-poster.jpg">
-        <source src="assets/video/ocean-waves-atlantico.mp4?v=6" type="video/mp4" />
+      <video class="hero-video" id="heroVideo" data-ocean-video autoplay muted loop playsinline webkit-playsinline preload="auto" aria-hidden="true">
+        <source src="assets/video/ocean-real-waves-bg.mp4?v=7" type="video/mp4" />
+        <source src="assets/video/ocean-full-site-bg.mp4?v=7" type="video/mp4" />
       </video>
       <div class="hero-scrim"></div>
       <div class="hero-grain" aria-hidden="true"></div>
@@ -71,7 +69,6 @@
         <div class="hero-copy reveal">
           <span class="eyebrow">Marketing • Vendas • Branding</span>
           <h1>Conectamos ideias. Transformamos marcas.</h1>
-          <div class="depth-meter" aria-hidden="true"><i></i><small>deep dive experience</small></div>
           <p>
             Estúdio criativo-digital para negócios que precisam de estética premium, estratégia clara e presença online com intenção comercial.
           </p>
@@ -93,24 +90,7 @@
         </aside>
       </div>
 
-      <a href="#imersao" class="scroll-cue" aria-label="Entrar na experiência oceânica"><span></span></a>
-    </section>
-
-    <section class="ocean-entry" id="imersao" aria-label="Transição oceânica ATLÂNTICO STUDIO">
-      <div class="ocean-entry-sticky">
-        <video class="ocean-entry-video" id="oceanEntryVideo" autoplay muted loop playsinline preload="auto" poster="assets/images/ocean-full-site-poster.jpg">
-          <source src="assets/video/ocean-real-waves-bg.mp4?v=6" type="video/mp4" />
-        </video>
-        <div class="ocean-entry-shade"></div>
-        <div class="liquid-portal" aria-hidden="true">
-          <span></span><span></span><span></span>
-        </div>
-        <div class="container ocean-entry-content reveal">
-          <span class="eyebrow">Imersão Digital</span>
-          <h2>Da superfície ao fundo: o oceano conduz a navegação.</h2>
-          <p>Ao sair do Hero, a experiência entra em modo imersivo com ondas reais, partículas e profundidade visual para criar a sensação de mergulho dentro da marca.</p>
-        </div>
-      </div>
+      <a href="#posicionamento" class="scroll-cue" aria-label="Ir para a próxima seção"><span></span></a>
     </section>
 
     <section class="section intro" id="posicionamento">
@@ -274,6 +254,6 @@
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="script.js?v=7"></script>
 </body>
 </html>

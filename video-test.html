@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Teste do vídeo — ATLÂNTICO STUDIO</title>
+  <style>
+    * { box-sizing: border-box; }
+    html, body { margin: 0; min-height: 100%; background: #02080d; color: #f3ead5; font-family: Inter, system-ui, sans-serif; }
+    .wrap { min-height: 100svh; display: grid; place-items: center; padding: 24px; }
+    video { width: min(1200px, 100%); max-height: 74svh; object-fit: cover; border: 1px solid rgba(242,210,117,.28); border-radius: 28px; box-shadow: 0 30px 90px rgba(0,0,0,.45); background: #000; }
+    .panel { width: min(1200px, 100%); display: grid; gap: 14px; }
+    h1 { margin: 0; font-family: Georgia, serif; font-size: clamp(2rem, 5vw, 4rem); line-height: 1; }
+    p { margin: 0 0 14px; color: rgba(243,234,213,.72); line-height: 1.6; }
+    a { color: #f2d275; }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="panel">
+      <h1>Teste do vídeo de oceano</h1>
+      <p>Esta página usa apenas vídeo, sem imagem no fundo. Se aqui tocar, o vídeo local do repositório está carregando corretamente no navegador.</p>
+      <video controls autoplay muted loop playsinline webkit-playsinline preload="auto">
+        <source src="assets/video/ocean-real-waves-bg.mp4?v=7" type="video/mp4" />
+        <source src="assets/video/ocean-full-site-bg.mp4?v=7" type="video/mp4" />
+        <source src="assets/video/ocean-waves-atlantico.mp4?v=7" type="video/mp4" />
+      </video>
+      <p><a href="index.html">Voltar para o site</a></p>
+    </section>
+  </main>
+</body>
+</html>

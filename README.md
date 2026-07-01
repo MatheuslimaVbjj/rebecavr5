@@ -1,64 +1,73 @@
-# ATLÂNTICO STUDIO — Site premium com Deep Dive Ocean Experience
+# ATLÂNTICO STUDIO — versão local com vídeo no Hero
 
-Site estático pronto para GitHub Pages, com vídeo de oceano no Hero, fundo oceânico em movimento no site inteiro e transição imersiva ao sair do Hero.
+Pacote pronto para publicar no GitHub Pages.
 
-## Arquivos principais
+## O que foi ajustado
 
-- `index.html` — página principal
-- `style.css` — estilos, responsividade, glassmorphism e experiência oceânica
-- `script.js` — loading, menu mobile, animações, formulário, scroll effect e partículas
-- `video-options.html` — página auxiliar para comparar 3 opções de vídeo
-- `assets/logo` — logo principal e ícones da marca
-- `assets/favicon` — favicon e Apple Touch Icon
-- `assets/video` — vídeos principais do oceano
-- `assets/video/options` — vídeos alternativos para escolha
-- `assets/images` — posters, thumbnails e artes SVG dos cards
+- O Hero principal agora usa vídeo local em MP4.
+- O fundo global do site também usa vídeo local.
+- Removi a dependência dos links externos da Pexels no `index.html` e no `video-test.html`.
+- Os vídeos foram colocados em `assets/video/`.
+- As opções extras ficaram em `assets/video/options/`.
+- Logo, favicon, imagens e thumbnails foram organizados nas pastas corretas.
+- Mantive o botão discreto “Ativar vídeo” para casos raros em que o Safari bloqueie autoplay.
 
-## O que foi aplicado nesta versão
+## Estrutura
 
-- Hero com vídeo de ondas em movimento.
-- Fundo do site inteiro com vídeo oceânico fixo.
-- Nova seção `Imersão Digital` logo após o Hero.
-- Efeito de saída do Hero com sensação de mergulho no oceano.
-- Canvas de partículas simulando particle wave.
-- Correntes luminosas e portal líquido acompanhando o scroll.
-- Responsividade ajustada para desktop, tablet e mobile.
-- Assets organizados nas pastas corretas para GitHub Pages.
+```txt
+atlantico-studio-local-video-final/
+├── index.html
+├── style.css
+├── script.js
+├── video-test.html
+├── video-options.html
+├── assets/
+│   ├── favicon/
+│   ├── images/
+│   ├── logo/
+│   └── video/
+└── README.md
+```
 
-## Como publicar no GitHub Pages
+## Vídeo principal
+
+O vídeo principal usado no Hero e no fundo do site é:
+
+```txt
+assets/video/ocean-real-waves-bg.mp4
+```
+
+Fallbacks locais incluídos:
+
+```txt
+assets/video/ocean-full-site-bg.mp4
+assets/video/ocean-waves-atlantico.mp4
+```
+
+## Como subir no GitHub Pages
 
 1. Extraia o ZIP.
-2. Envie todos os arquivos para o repositório.
-3. No GitHub, vá em **Settings > Pages**.
-4. Em **Branch**, selecione `main` e `/root`.
-5. Salve e aguarde a publicação.
+2. Entre na pasta `atlantico-studio-local-video-final`.
+3. Envie todos os arquivos para a raiz do repositório.
+4. No GitHub, vá em **Settings > Pages**.
+5. Em **Branch**, selecione `main` e `/root`.
+6. Salve e aguarde a publicação.
 
-## Importante sobre cache
+## Teste do vídeo
 
-Se o navegador ainda mostrar uma versão antiga, faça atualização forçada:
+Depois de publicar, abra:
+
+```txt
+/video-test.html
+```
+
+Se o vídeo tocar nessa página, o arquivo local está carregando corretamente.
+
+## Cache
+
+Depois de substituir arquivos no GitHub Pages, faça atualização forçada:
 
 - Safari no Mac: `Option + Command + R`
 - Chrome/Edge: `Command + Shift + R` ou `Ctrl + Shift + R`
-- Também vale testar em janela anônima.
 
-## Trocar vídeo principal
-
-No `index.html`, altere os caminhos dentro das tags `<source>`.
-
-Hero atual:
-
-```html
-<source src="assets/video/ocean-waves-atlantico.mp4?v=6" type="video/mp4" />
-```
-
-Transição imersiva atual:
-
-```html
-<source src="assets/video/ocean-real-waves-bg.mp4?v=6" type="video/mp4" />
-```
-
-Fundo do site inteiro:
-
-```html
-<source src="assets/video/ocean-full-site-bg.mp4?v=6" type="video/mp4" />
-```
+Também vale testar em janela privada.
