@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-label="Atlântico Studio deep interface">
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0a3349"/><stop offset=".5" stop-color="#03141d"/><stop offset="1" stop-color="#02080d"/></linearGradient><radialGradient id="a" cx="30%" cy="10%" r="55%"><stop offset="0" stop-color="#33a6bf" stop-opacity=".35"/><stop offset="1" stop-color="#33a6bf" stop-opacity="0"/></radialGradient></defs>
+  <rect width="1200" height="900" fill="url(#bg)"/><rect width="1200" height="900" fill="url(#a)"/>
+  <g opacity=".55" fill="none" stroke="#f2d275" stroke-width="3"><circle cx="600" cy="430" r="230"/><circle cx="600" cy="430" r="330" opacity=".35"/><circle cx="600" cy="430" r="430" opacity=".18"/></g>
+  <path d="M0 690 C180 620 330 720 510 650 C690 580 795 705 980 640 C1085 605 1150 610 1200 590 L1200 900 L0 900z" fill="#093a4b" opacity=".78"/>
+  <path d="M180 348h840v262H180z" fill="#f3ead5" opacity=".06" stroke="#f2d275" stroke-opacity=".22"/>
+  <path d="M260 430h390M260 490h520M260 550h260" stroke="#f3ead5" stroke-opacity=".55" stroke-width="12" stroke-linecap="round"/>
+</svg>

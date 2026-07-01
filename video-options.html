@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Opções de vídeo — ATLÂNTICO STUDIO</title>
+  <style>
+    :root{--bg:#02080d;--card:#071824;--line:rgba(242,210,117,.18);--gold:#f2d275;--sand:#f3ead5;--muted:rgba(243,234,213,.66)}
+    *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--sand);font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}main{width:min(1180px,calc(100% - 36px));margin:0 auto;padding:48px 0 70px}header{display:flex;justify-content:space-between;gap:24px;align-items:end;margin-bottom:34px}h1{font-family:Georgia,"Times New Roman",serif;font-size:clamp(2.3rem,5vw,4.7rem);line-height:.98;letter-spacing:-.04em;margin:0}p{color:var(--muted);line-height:1.65;max-width:640px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{border:1px solid var(--line);border-radius:28px;overflow:hidden;background:var(--card);box-shadow:0 28px 70px rgba(0,0,0,.28)}video{width:100%;aspect-ratio:16/9;object-fit:cover;background:#000}article{padding:22px}span{color:var(--gold);font-size:.72rem;letter-spacing:.18em;font-weight:800;text-transform:uppercase}h2{font-size:1.2rem;margin:10px 0 8px}.path{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.8rem;color:var(--gold);word-break:break-word}@media(max-width:900px){header{display:block}.grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div>
+        <h1>Escolha o vídeo do Hero</h1>
+        <p>Todos estão salvos em MP4/H.264 para funcionar bem no Safari, mobile e GitHub Pages. A versão atual do site usa a opção 03 por padrão.</p>
+      </div>
+    </header>
+    <section class="grid">
+      <div class="card">
+        <video src="assets/video/options/ocean-option-01-ondas-aereas.mp4" controls muted loop playsinline poster="assets/images/video-thumbs/ocean-option-01-ondas-aereas.jpg"></video>
+        <article><span>Opção 01</span><h2>Ondas aéreas</h2><p>Mais clara, oceânica e próxima do estilo Instagram, boa para impacto imediato.</p><div class="path">assets/video/options/ocean-option-01-ondas-aereas.mp4</div></article>
+      </div>
+      <div class="card">
+        <video src="assets/video/options/ocean-option-02-mar-profundo.mp4" controls muted loop playsinline poster="assets/images/video-thumbs/ocean-option-02-mar-profundo.jpg"></video>
+        <article><span>Opção 02</span><h2>Mar profundo premium</h2><p>Mais escura e sofisticada, boa para uma estética navy/luxo com texto bem legível.</p><div class="path">assets/video/options/ocean-option-02-mar-profundo.mp4</div></article>
+      </div>
+      <div class="card">
+        <video src="assets/video/options/ocean-option-03-ondas-batendo.mp4" controls muted loop playsinline poster="assets/images/video-thumbs/ocean-option-03-ondas-batendo.jpg"></video>
+        <article><span>Opção 03</span><h2>Ondas batendo</h2><p>Mais espuma, movimento e energia visual. É a opção aplicada no Hero da v4.</p><div class="path">assets/video/options/ocean-option-03-ondas-batendo.mp4</div></article>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
